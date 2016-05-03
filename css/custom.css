@@ -1,0 +1,123 @@
+p, li, div, input, button {
+  font-family: 'Amatic SC', cursive;
+}
+
+#notepad {
+  background-color: #f5f5f5;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #000;
+}
+#header {
+  overflow: hidden;
+}
+#title {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px 0px;
+  margin: 0;
+}
+#list {
+  color: #555;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: courier, monospace;
+  border: 1px solid #dedede;
+  list-style-type: none;
+}
+#list li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px 0px;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+.add-task, .input {
+  padding: 5px;
+  border: 0;
+  background: none;
+}
+.add-task {
+  margin-top: 40px;
+}
+.input {
+  font-size: 40px;
+  opacity: .5;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+li a .fa {
+  font-size: 30px;
+}
+li a {
+  color: #808080;
+  opacity: .5;
+  position: relative;
+  top: -3px;
+  left: -30px;
+}
+li a:hover {
+  color: #c9302c;
+  opacity: 1;
+}
+.delete {
+  font-size: 30px;
+  display: block;
+  margin: 46px auto;
+  width: 75%;
+}
+.submit {
+  width: 100%;
+  font-size: 40px;
+}
+#total-tasks {
+  font-size: 20px;
+  float: right;
+  margin: 10px;
+}
+.connected {
+  background-color: #5cb85c;
+  color: white;
+  padding: 5px 10px;
+  margin: 15px auto;
+  display: block;
+  width: 22%;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/*animated background */
+body {
+  animation: colorChange 60s; 
+  animation-iteration-count:infinite; 
+  -webkit-animation: colorchange 30s; 
+  -webkit-animation-iteration-count:infinite;
+}
+@keyframes colorChange
+{
+  0%   {background: #00ffcc;}
+  12%  {background: #000099}
+  36%  {background: #7a00cc;}
+  60%  {background: #0066ff;}
+  88%   {background: #00ffcc;}
+  100%   {background: #00ffcc;}
+
+}
+@-webkit-keyframes Colorchange 
+{
+  0%   {background: #00ffcc;}
+  12%  {background: #000099}
+  36%  {background: #7a00cc;}
+  60%  {background: #0066ff;}
+  88%   {background: #00ffcc;}
+  100%   {background: #00ffcc;}
+}
